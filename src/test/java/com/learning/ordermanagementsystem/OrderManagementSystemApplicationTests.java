@@ -5,12 +5,14 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.system.CapturedOutput;
 import org.springframework.boot.test.system.OutputCaptureExtension;
+import org.springframework.test.context.ActiveProfiles;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 
 @ExtendWith(OutputCaptureExtension.class)
 @SpringBootTest
+@ActiveProfiles("test")
 class OrderManagementSystemApplicationTests {
 
     @Test
