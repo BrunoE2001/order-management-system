@@ -1,6 +1,6 @@
 package com.learning.ordermanagementsystem.api.controller;
 
-import com.learning.ordermanagementsystem.application.dto.CreateOrderRequest;
+import com.learning.ordermanagementsystem.application.dto.order.CreateOrderRequest;
 import com.learning.ordermanagementsystem.application.service.OrderService;
 import com.learning.ordermanagementsystem.domain.model.Order;
 import lombok.RequiredArgsConstructor;

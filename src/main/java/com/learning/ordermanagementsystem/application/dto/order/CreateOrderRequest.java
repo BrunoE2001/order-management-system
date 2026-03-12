@@ -1,4 +1,4 @@
-package com.learning.ordermanagementsystem.application.dto;
+package com.learning.ordermanagementsystem.application.dto.order;
 
 import lombok.Getter;
 import lombok.Setter;

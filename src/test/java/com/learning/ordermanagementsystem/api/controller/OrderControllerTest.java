@@ -1,8 +1,8 @@
 package com.learning.ordermanagementsystem.api.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.learning.ordermanagementsystem.application.dto.CreateOrderRequest;
-import com.learning.ordermanagementsystem.application.dto.OrderItemRequest;
+import com.learning.ordermanagementsystem.application.dto.order.CreateOrderRequest;
+import com.learning.ordermanagementsystem.application.dto.order.OrderItemRequest;
 import com.learning.ordermanagementsystem.domain.model.Product;
 import com.learning.ordermanagementsystem.infrastructure.repository.JpaProductRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -37,6 +37,8 @@ class OrderControllerTest {
 
     @BeforeEach
     void setup() {
+        productRepository.deleteAll();
+
         Product product = Product.builder()
                 .name("Laptop")
                 .price(BigDecimal.valueOf(1000))

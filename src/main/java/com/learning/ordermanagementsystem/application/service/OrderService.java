@@ -1,7 +1,7 @@
 package com.learning.ordermanagementsystem.application.service;
 
-import com.learning.ordermanagementsystem.application.dto.CreateOrderRequest;
-import com.learning.ordermanagementsystem.application.dto.OrderItemRequest;
+import com.learning.ordermanagementsystem.application.dto.order.CreateOrderRequest;
+import com.learning.ordermanagementsystem.application.dto.order.OrderItemRequest;
 import com.learning.ordermanagementsystem.domain.model.Order;
 import com.learning.ordermanagementsystem.domain.model.OrderItem;
 import com.learning.ordermanagementsystem.domain.model.Product;

@@ -25,4 +25,14 @@ public class ProductRepositoryAdapter implements ProductRepository {
 
         return jpaRepository.findAll(spec, pageable);
     }
+
+    @Override
+    public Product getByIdProduct(Long id) {
+        return jpaRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    public Product saveProduct(Product product) {
+        return jpaRepository.save(product);
+    }
 }
